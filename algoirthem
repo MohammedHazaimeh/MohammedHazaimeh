@@ -1,0 +1,34 @@
+package algorithem;
+
+
+import java.util.Scanner;
+
+public class main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		   System.out.print("input the number:");
+		   Scanner input = new Scanner (System.in);
+			int x = input.nextInt();
+          
+          for(int i=x; i >=0;i--)
+        	  
+          System.out.println(fib(i));
+	}
+          
+          public static int fib(int x) {
+        	  
+        	 if(x==0 || x==1)
+        		 return 1;
+        	 
+        	 else
+     
+        		  return fib(x-1)+ fib(x-2);
+        	  
+          }
+          
+  
+	
+
+}
