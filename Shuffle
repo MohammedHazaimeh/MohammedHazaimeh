@@ -1,0 +1,43 @@
+package algorithem;
+
+public class Shuffle {
+	
+	public static void main(String [] args) {
+		
+	    int [] arrShuffle =  {1,2,3,4,5} ;    
+	        
+	    int  lastArr , lastArr2;    
+	     
+	    for (int i =0; i<1 ;i++) {
+	   	    lastArr= arrShuffle[0];
+		     
+	 	    lastArr2 = arrShuffle[2];
+	    	
+				          
+	            for(int x = 0; x <arrShuffle.length-1; x++){    
+	                   arrShuffle[x] = arrShuffle[x+1];
+	               
+	             }
+	            
+	              arrShuffle[arrShuffle.length-1]=lastArr;
+	               
+	              
+	              
+	              	              
+		            for(int x = 1; x <3; x++){    
+		                   arrShuffle[x] = arrShuffle[x+1];
+		                
+		             }
+		            
+		              arrShuffle[3]=lastArr2;
+			
+	    }
+			
+	       for(int i = 0; i<= arrShuffle.length-1; i++){    
+	           System.out.print(arrShuffle[i] +"  ");    
+	            
+	        }    
+	    
+	}
+
+}
